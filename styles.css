@@ -1,33 +1,80 @@
+body {
+    padding-top: 40px;
+    margin-top: 350px;
+    margin-bottom: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e4b2b2;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
 
-@charset "UTF-8";
-
-*{
+form {
+    width: 80%; 
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgba(197, 179, 212, 0.589);
-    color: rgb(12, 11, 11);
+    background-color: #2927271f;
+    color:#2b0808 ;
 }
 
-h1 {
+
+h1#titulo{
     text-align: center;
+    margin-bottom: 20px;
+    color: #6e0808;
+    font-size: 40px;
 }
 
-div {
-    text-align: center;
-    font-size: 24px;
-    padding: 23px;
+
+label {
+    display: block;
+    margin-bottom: 10px;
 }
 
-.escolha {
+input[type="text"], input[type="number"], select, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label, .prefere {
     font-size: 23px;
-    border-radius: 10px;
-    font-weight: 100;
-    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.prefere p {
+    margin-bottom: 10px;
+}
+
+.prefere label {
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: 20px;
 }
 
 .botao {
-    font-size: 24px;
+    background-color: #3f0710;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
     border-radius: 10px;
-    text-align: center;
-    justify-content: center;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.botao:hover {
+    background-color: #49373d;
 }
 

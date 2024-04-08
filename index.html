@@ -7,52 +7,52 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Formulário sobre filmes e séries<h1>
-    </header>
+    <h1 id="titulo">Formulário sobre filmes e séries<h1>
 
         <form>
-        <div class="nome">
-            <label for="inome">Nome <input id="inome" name="nome" required type="text" placeholder="Nome" /></label>
+            <div>
+            <div class="nome">
+                <label for="inome">Nome <input id="inome" name="nome" required type="text" placeholder="Nome" /></label>
+                <br>
+                <label for="iemail">Email <input type="text" id="email" name="iemail" required placeholder="Email" /></label>
+                <br>
+                <label for="idade">Idade <input min="13" max="100" id="idade" type="number" name="dade" required placeholder="Idade"/></label>
+            </div>
+            <div class="prefere">
+                <p>O que você prefere ?</p>
+                <label for="ifilme"><input id="ifilme"  value="1" type="radio" name="filme" class="inline"> Filme</label>
+                <br>
+                <label for="iserie"><input id="iserie"  value="3" type="radio" name="serie" class="inline" /> Série</label><br>
+            </div>
+            <div class="genero">
+                <label for="igenero">Qual seu genêro favorito?
+                    <select id="igenero" name="genero" class="escolha">
+                    <option value="1">Ação</option>
+                    <option value="2">Comédia</option>
+                    <option value="3">Drama</option>
+                    <option value="4">Ficção</option>
+                    <option value="4">Terror</option>
+                     </select>
+                </label>
+            </div>
             <br>
-            <label for="iemail">Email <input type="text" id="email" name="iemail" required placeholder="Email" /></label>
+            <div class="nacional">
+                <Label for="prefere">Você prefere filmes/séries de qual nacionalidade: 
+                <br>
+                <Label for="ibra"><input value="1" id="ibra" name="brasil" type="checkbox" class="inline" />Brasileiro</label><br>
+                <Label for="iame"><input value="2" id="iame" name="eua" type="checkbox" class="inline" />Americano</label><br>
+                <Label for="ieur"><input value="3" id="ieur" name="europa" type="checkbox" class="inline" />Europeu</label><br>
+                <Label for="iasi"><input value="5" id="iasi" name="asia" type="checkbox" class="inline" />Asiático</label><br>
+                <Label for="iou"><input value="5" id="iou" name="outro" type="checkbox" class="inline" />Outro</label>
+            </div>
             <br>
-            <label for="idade">Idade <input min="13" max="100" id="idade" type="number" name="dade" required placeholder="Idade"/></label>
+            <div>
+                <label for="comments">Qual sua opinião sobre os filmes e séries da atualidade?<br>
+                <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Deixe sua opinião aqui..."></textarea>
+                </label>
+            </div>
+            <input id="enviar" type="submit" value="Enviar" class="botao">
         </div>
-        <div class="prefere">
-            <p>O que você prefere ?</p>
-            <label for="ifilme"><input id="ifilme"  value="1" type="radio" name="filme" class="inline"> Filme</label>
-            <br>
-            <label for="iserie"><input id="iserie"  value="3" type="radio" name="serie" class="inline" /> Série</label><br>
-        </div>
-        <div class="genero">
-            <label for="igenero">Qual seu genêro favorito?
-                <select id="igenero" name="genero" class="escolha">
-                <option value="1">Ação</option>
-                <option value="2">Comédia</option>
-                <option value="3">Drama</option>
-                <option value="4">Ficção</option>
-                <option value="4">Terror</option>
-                 </select>
-            </label>
-        </div>
-        <br>
-        <div class="nacional">
-            <Label for="prefere">Você prefere filmes/séries: <br>
-            <Label for="ibra"><input value="1" id="ibra" name="brasil" type="checkbox" class="inline" />Brasileiro</label><br>
-            <Label for="iame"><input value="2" id="iame" name="eua" type="checkbox" class="inline" />Americano</label><br>
-            <Label for="ieur"><input value="3" id="ieur" name="europa" type="checkbox" class="inline" />Europeu</label><br>
-            <Label for="iasi"><input value="5" id="iasi" name="asia" type="checkbox" class="inline" />Asiático</label><br>
-            <Label for="iou"><input value="5" id="iou" name="outro" type="checkbox" class="inline" />Outro</label>
-        </div>
-        <br>
-        <div>
-            <label for="comments">Qual sua opinião sobre os filmes e séries da atualidade?<br>
-            <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Deixe sua opinião aqui..."></textarea>
-            </label>
-        </div>
-        <br>
-        <input id="enviar" type="submit" value="Enviar" class="botao">
         </form>
 </body>
 </html>
